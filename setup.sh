@@ -6,7 +6,7 @@ sudo mdutil -i off -a
 #Create new account
 sudo dscl . -create /Users/ilyas
 sudo dscl . -create /Users/ilyas UserShell /bin/bash
-sudo dscl . -create /Users/ilyas RealName "Ilyas"
+sudo dscl . -create /Users/ilyas RealName "caejb"
 sudo dscl . -create /Users/ilyas UniqueID 1001
 sudo dscl . -create /Users/ilyas PrimaryGroupID 80
 sudo dscl . -create /Users/ilyas NFSHomeDirectory /Users/vncuser
@@ -28,16 +28,8 @@ sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resourc
 #install ngrok
 brew install --cask ngrok
 brew install --cask teamviewer
-brew install --cask intellij-idea
-brew install --cask android-studio
 brew install --cask visual-studio-code
-brew install --cask docker
 brew install --cask github
-brew install --cask postman
-brew install kubernetes-cli
-brew tap mongodb/brew
-brew update
-brew install mongodb-community@6.0
 
 #configure ngrok and start it
 ngrok authtoken $3
